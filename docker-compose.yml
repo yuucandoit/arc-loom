@@ -1,0 +1,17 @@
+services:
+  arc-loom-server:
+    build:
+      context: ./packages/core-py
+      dockerfile: Dockerfile
+    container_name: arc-loom-server
+    ports:
+      - "8080:8080"
+    environment:
+      ARC_SQLITE_PATH: /data/arc_loom.db
+      ARC_CACHE_DIR: /data/caches
+      ARC_TARGET_ENDPOINT: http://host.docker.internal:11434/v1
+    volumes:
+      - arc_loom_data:/data
+
+volumes:
+  arc_loom_data:

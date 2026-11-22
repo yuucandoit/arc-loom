@@ -1,0 +1,11 @@
+{
+  "name": "@arc-loom/dashboard",
+  "version": "0.1.0",
+  "description": "ARC-Loom FinOps Ledger & CPU-ARC Routing Visualizer",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/app.ts --outfile ./dist/app.js --target browser",
+    "test": "bun test"
+  },
+  "license": "MIT"
+}

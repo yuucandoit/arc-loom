@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+.venv/
+venv/
+.pytest_cache/
+packages/core-py/build/
+packages/core-py/dist/
+
+# TypeScript / Bun / Node
+node_modules/
+*.tsbuildinfo
+
+# ARC-Loom Runtime Data & SQLite
+data/
+caches/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.faiss
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# OS & Editors
+.DS_Store
+.vscode/
+.idea/
